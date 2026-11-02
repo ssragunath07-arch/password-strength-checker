@@ -33,12 +33,11 @@ def main():
     print("This is an educational password checker.")
     print()
 
-    # Test password for demonstration
-    password = "Test@12345"
+    password = input("Enter a test password: ")
 
     checks, strength = check_password_strength(password)
 
-    print("--- Password Security Report ---")
+    print("\n--- Password Security Report ---")
     print()
 
     for rule, passed in checks.items():
