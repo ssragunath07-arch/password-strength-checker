@@ -1,4 +1,3 @@
-import getpass
 import string
 
 
@@ -31,14 +30,16 @@ def main():
     print("=" * 40)
     print("     PASSWORD STRENGTH CHECKER")
     print("=" * 40)
-    print("Your password will not be saved.")
+    print("This is an educational password checker.")
     print()
 
-    password = getpass.getpass("Enter a test password: ")
+    # Test password for demonstration
+    password = "Test@12345"
 
     checks, strength = check_password_strength(password)
 
-    print("\n--- Password Security Report ---")
+    print("--- Password Security Report ---")
+    print()
 
     for rule, passed in checks.items():
         status = "PASS" if passed else "FAIL"
